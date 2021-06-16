@@ -1,0 +1,32 @@
+.small-card-with-arrow {
+    height: 7vh;
+    width: 90vw;
+    margin-top: 2vh;
+    border-radius: 2rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.small-card-with-arrow .fa.fa-user{
+    
+    font-size: 5rem;
+    height: 80%;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: #fff;
+    border-radius: 2rem;
+    margin-left: 5vw;
+}
+.small-card-with-arrow h2{
+    font-size: 2.5rem;
+    margin-left: 3vw;
+
+}
+.small-card-with-arrow .fa.fa-chevron-right{
+    font-size: 4rem;
+    margin-left: 20vw;
+
+}

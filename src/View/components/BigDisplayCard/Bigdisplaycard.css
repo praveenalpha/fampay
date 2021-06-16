@@ -1,0 +1,96 @@
+.big-display-card-container{
+    height: 64vh;
+    width: 90vw;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 3vh;
+    border-radius: 3rem;
+    display: flex;
+
+}
+.big-display-card{
+    height: 64vh;
+    width: 90vw;
+    background-color: #454aa6;
+    margin-top: 0vh;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+}
+.big-display-card-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.big-display-card-icon-one{
+    height: 9vh;
+    width: 15vw;
+    background-color: #E5E5E5;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    
+}
+.big-display-card-icon-one i{
+    color: #FBAF03;
+    font-size: 3rem;
+}
+.big-display-card-icon-one h5{
+    font-size: 1rem;
+
+}
+.long-pressed{
+    transform: translate(24vw, 0px);
+    cursor: pointer;
+}
+.big-display-card-img{
+    height: 30%;
+    width: 55%;
+    margin-top: 2vh;
+    margin-left: 5vw;
+
+
+}
+.big-display-card-img img{
+    height: 51vh;
+    width: 75vw;
+}
+.big-display-card h1{
+    margin-left: 9vw;
+    font-size: 4rem;
+    color: orange;
+}
+.h1-color{
+    color: #fff;
+}
+.big-display-card p{
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 9vw;
+
+}
+.big-display-card button {
+    width: 30vw;
+    height: 5vh;
+    margin-left: 9vw;
+    background: black;
+    color: #fff;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    margin-top: 4vh;
+}
+@media all and (max-width: 360px){
+    .big-display-card{
+        cursor: pointer;
+    }
+    .big-display-card-long-pressed{
+        cursor: pointer;
+    }
+}

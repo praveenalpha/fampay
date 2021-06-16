@@ -1,0 +1,9 @@
+.container{
+    background-color: #E5E5E5;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

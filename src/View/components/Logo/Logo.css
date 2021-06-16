@@ -1,0 +1,17 @@
+.logo{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+.logo-img{
+    width: 25vw;
+    height: 100%;
+}
+.logo-img img{
+    height: 100%;
+    width: 100%;
+}

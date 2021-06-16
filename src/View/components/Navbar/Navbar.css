@@ -1,0 +1,23 @@
+.navbar{
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-icons{
+    display: flex;
+    width: 17vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-icons i{
+    color: gray;
+    font-size: 2rem;
+}
+.navbar-icons i.tri{    
+    font-size: 5rem;
+}
+@media all and (max-width: 360px){
+    .navbar{
+    }
+}
