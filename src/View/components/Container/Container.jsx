@@ -8,16 +8,17 @@ import axios from "axios";
 
 class Container extends Component {
     state = { 
-        bigDataCard: {},
-
+        bigDataCard: [],
+        smallCardWithArrow: []
      }
 
     componentDidMount = () => {
-        axios.get("http://www.mocky.io/v2/5ed79368320000a0cc27498b").then( (obj) => {
-            let bigDataCard = obj.data[0];
-            console.log(obj.data[0]);
+        axios.get("https://run.mocky.io/v3/04a04703-5557-4c84-a127-8c55335bb3b4").then( (obj) => {
+            
+            console.log(obj);
             this.setState({
-                bigDataCard: bigDataCard
+                bigDataCard: obj.data.card_groups[6],
+                smallCardWithArrow: obj.data.card_groups[0]
             })
         })
     }
@@ -25,7 +26,7 @@ class Container extends Component {
         return ( 
             <div className="container">
                 <BigDisplayCard bigDataCard = {this.state.bigDataCard} /> 
-                <SmallCardWithArrow />
+                <SmallCardWithArrow smallCardWithArrow = {this.state.smallCardWithArrow}/>
                 <ImageCard />
             </div>
          );
