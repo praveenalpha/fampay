@@ -7,7 +7,8 @@ class BigDisplayCard extends Component {
         bigDataCard: undefined,
         url : undefined,
         titleTextOne : "",
-        titleTextTwo : ""
+        titleTextTwo : "",
+        disable: false
         
     }
 
@@ -61,7 +62,12 @@ class BigDisplayCard extends Component {
     }
 
     setTimeOutID = undefined;
-
+    disableHandler = () => {
+        this.setState({
+            ...this.state,
+            disable: true
+        })
+    }
     start = (e) => {
         e.preventDefault();
         console.log("start")
@@ -81,13 +87,13 @@ class BigDisplayCard extends Component {
 
     render() {
         return (
-            <div className="big-display-card-container" >
+            <div className={this.state.disable ? "disable" : "big-display-card-container"} >
                 <div className="big-display-card-icon">
-                    <div className="big-display-card-icon-one">
+                    <div className="big-display-card-icon-one" onTouchStart={() => {this.disableHandler()}}>
                         <i class="fa fa-bell" aria-hidden="true"></i>
                         <h5>Remind me later</h5>
                     </div>
-                    <div className="big-display-card-icon-one">
+                    <div className="big-display-card-icon-two" onTouchStart={() => {this.disableHandler()}}>
                         <i class="fa fa-times-circle" aria-hidden="true"></i>
                         <h5>Dissmiss Now</h5>
                     </div>
