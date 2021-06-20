@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 import "./ImageCard.css";
 
 class ImageCard extends Component {
-    state = {  }
+    state = { 
+        url: this.props.card.url
+     }
+     
+     onClickHandler = () => {
+        window.location.replace(this.state.url);
+     }
     render() { 
         return ( 
-            <div className="image-card">
-                <img src="https://westeros-staging.s3.amazonaws.com/media/images/generic/5cb0d958af964354a728dd5c04537e1d.png" alt="" />
+            <div className="image-card" onTouchStart = {() => {this.onClickHandler()}}>
+                {this.props.card && <img src={this.props.card.bg_image.image_url} alt="" />}
             </div>
          );
     }

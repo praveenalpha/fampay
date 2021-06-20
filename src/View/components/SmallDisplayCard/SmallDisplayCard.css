@@ -1,0 +1,19 @@
+.small-display-card{
+    height: 10vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    border-radius: 2rem;
+}
+.small-display-card img{
+    height: 50%;
+    width: 10%;
+    border-radius: 3rem;
+    margin-left: 10vw;
+}
+.small-display-card h3{
+    margin-left: 5vw;
+    font-size: 2rem;
+
+}
