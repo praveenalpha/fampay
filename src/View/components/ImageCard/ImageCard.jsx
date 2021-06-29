@@ -11,7 +11,7 @@ class ImageCard extends Component {
      }
     render() { 
         return ( 
-            <div className="image-card" onTouchStart = {() => {this.onClickHandler()}}>
+            <div className="image-card" onClick = {() => {this.onClickHandler()}}>
                 {this.props.card && <img src={this.props.card.bg_image.image_url} alt="" />}
             </div>
          );

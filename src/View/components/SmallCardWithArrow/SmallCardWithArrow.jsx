@@ -34,7 +34,7 @@ class SmallCardWithArrow extends Component {
         let description = this.state.smallCardWithArrow === undefined ? "" : this.state.smallCardWithArrow.cards[0].formatted_description.text;
         let descriptionText = this.state.smallCardWithArrow === undefined ? "" : this.state.smallCardWithArrow.cards[0].formatted_description.entities[0].text;
         return ( 
-            <div className="small-card-with-arrow" onTouchStart = {() => {this.onclickHandler()}}>
+            <div className="small-card-with-arrow" onClick = {() => {this.onclickHandler()}}>
                 {this.state.smallCardWithArrow && <img src={this.state.smallCardWithArrow.cards[0].icon.image_url} alt="" />}
                 <div className="small-card-with-arrow-text">
                     <h2>{text.substring(0, 11)}<span style={this.text_style}>{text2}</span></h2>

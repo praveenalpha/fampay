@@ -89,11 +89,11 @@ class BigDisplayCard extends Component {
         return (
             <div className={this.state.disable ? "disable" : "big-display-card-container"} >
                 <div className="big-display-card-icon">
-                    <div className="big-display-card-icon-one" onTouchStart={() => {this.disableHandler()}}>
+                    <div className="big-display-card-icon-one" onClick={() => {this.disableHandler()}}>
                         <i class="fa fa-bell" aria-hidden="true"></i>
                         <h5>Remind me later</h5>
                     </div>
-                    <div className="big-display-card-icon-two" onTouchStart={() => {this.disableHandler()}}>
+                    <div className="big-display-card-icon-two" onClick={() => {this.disableHandler()}}>
                         <i class="fa fa-times-circle" aria-hidden="true"></i>
                         <h5>Dissmiss Now</h5>
                     </div>
@@ -112,7 +112,7 @@ class BigDisplayCard extends Component {
                         <span className="h1-color">{this.state.bigDataCard.cards[0].description.substring(48, 75)}</span></p>}
 
                     {this.state.bigDataCard &&
-                        <button onTouchStart={() => this.onLinkHandler()} style={this.btn_style}>
+                        <button onClick={() => this.onLinkHandler()} style={this.btn_style}>
 
                             {this.state.bigDataCard.cards[0].cta[0].text}
 

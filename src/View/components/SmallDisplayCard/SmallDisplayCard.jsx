@@ -15,7 +15,7 @@ class SmallDisplayCard extends Component {
     }
     render() { 
         return ( 
-            <div className="small-display-card" onTouchStart = {() => {this.onClickHandler()}} style={this.bg_style}>
+            <div className="small-display-card" onClick = {() => {this.onClickHandler()}} style={this.bg_style}>
                 <img src={this.props.card.icon.image_url} alt="" />
                 <h3>{this.props.card.formatted_title.text}</h3>
             </div>

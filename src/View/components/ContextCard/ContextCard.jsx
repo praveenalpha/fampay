@@ -13,7 +13,7 @@ class ContextCard extends Component {
      }
     render() { 
         return ( 
-            <div className="context_card_div" style = {this.my_style} onTouchStart = { () => this.onClickHandler()}>
+            <div className="context_card_div" style = {this.my_style} onClick = { () => this.onClickHandler()}>
                 {this.props.card && <img src={this.props.card.bg_image.image_url} alt="" /> }
             </div>
          );
